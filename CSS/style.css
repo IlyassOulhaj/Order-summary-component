@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: url(../images/pattern-background-desktop.svg) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  width: 350px;
+  min-width: 300px;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container .image {
+  width: 100%;
+  height: 33%;
+}
+
+.container .image img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .title-description {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.container .title-description .title {
+    font-size: 2.1rem;
+    font-weight: 900;
+    transform: translateY(10px);
+    color: hsl(223, 47%, 23%);
+}
+
+.container .title-description .description {
+    font-size: 1.6rem;
+    color: hsl(224, 23%, 55%);
+    max-width: 28ch;
+}
+
+.container .plan-payment {
+    background: hsl(225, 100%, 98%);
+    margin: 0 30px;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.container .plan-payment .plan { 
+    /* padding: 0 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .plan-payment .plan-price {
+    display: flex;
+    align-items: center;
+}
+
+.plan-payment .plan-price div { 
+    margin-left: 15px;
+}
+
+.plan-payment .plan-price div p:nth-child(1) {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+
+.plan-payment .plan-price div p:nth-child(2) {
+    color: hsl(224, 23%, 55%);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.plan-payment .link {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.plan-payment .link a { 
+    color: hsl(245, 75%, 52%);
+}
+
+.plan-payment .link a:hover { 
+    text-decoration: none;
+    opacity: .7
+}
+
+.container .procced-cancel { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .procced-cancel .procced { 
+    width: 83%;
+    text-align: center;
+    background: hsl(245, 75%, 52%);
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: 25px 0;
+    box-shadow: 0px 15px 10px hsla(245, 75%, 52%, 0.205);
+}
+
+.procced-cancel .procced a { 
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container .procced-cancel .cancel {
+    width: 83%;
+    text-align: center;
+}
+
+.procced-cancel .cancel a { 
+    color: hsl(224, 23%, 55%);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 900;
+}
